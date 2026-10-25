@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Network Forensic Analyzer
+ONetX is a network forensic and traffic analysis suite covering live connections, packet sniffing, DNS, port scanning, ARP discovery, banner grabbing, and PCAP analysis. CLI supports offline PCAP analysis and an authorised-use `--agree` flag; the fuller interactive workflow provides geo-IP, protocol stats, and JSON/TXT/HTML forensic reports.
 
 ---
 
 ## ✨ Features
 
-- Network forensics and PCAP analyzer
+- Live connection listing with process mapping and Geo-IP context
+- Raw packet sniffer with PCAP capture and SHA-256 integrity
+- DNS resolver / reverse lookup, port scanner, ARP discovery, and banner grabbing
+- Traffic statistics, protocol analysis, and Ethernet/IP/TCP/UDP/ICMP packet decoder
+- Forensic report generation (JSON / TXT / HTML) and interface monitor
+- Non-interactive offline PCAP analysis via `--pcap` with optional `--agree` to skip the authorised-use prompt
 
 ---
 
@@ -38,7 +43,9 @@ Network Forensic Analyzer
 ## 🚀 Usage
 
 ```bash
-./ONetX
+./ONetX --pcap capture.pcap --agree
+./ONetX --agree
+./ONetX --help
 ```
 
 ---
